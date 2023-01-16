@@ -42,11 +42,30 @@ Value_1, Value_2, Value_3 = tuple_numbers
 print(Value_1,Value_2 , Value_3)
 
 
+#- Use the index() method to find the index of the string "b" in the letters tuple. 
+
+print (tuple_letters[1])
+
+#- Use the count() method to find the number of occurrences of the integer 2 in the result tuple.
+
+def countX(tuple_numbers, x):
+    count = 0
+    for ele in tuple_numbers:
+        if (ele == x):
+            count = count + 1
+    return count 
+
+coun = 2
+print(countX(tuple_numbers, coun))
+
+#- Use the enumerate() function to iterate over the result tuple, along with its index, and print out each item and its index.
+
+for idx, x in enumerate(result):
+    print(idx, x )
+  
 
 
-Value_11, Value_22, Value_33 = tuple_letters
 
-print(Value_11,Value_22 , Value_33)
 
 
 
